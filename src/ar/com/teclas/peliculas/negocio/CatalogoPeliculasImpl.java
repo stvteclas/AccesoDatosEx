@@ -21,6 +21,7 @@ public class CatalogoPeliculasImpl implements CatalogoPeliculas{
         boolean anexar = false;
         try {
             anexar= datos.existe(NOMBRE_RECURSO);
+            datos.escribir(pelicula,NOMBRE_RECURSO, anexar);
         } catch (AccesoDatosEx e) {
             System.out.println("Error de acceso a datos");
             e.printStackTrace(System.out);

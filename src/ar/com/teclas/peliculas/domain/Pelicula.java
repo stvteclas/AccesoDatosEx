@@ -2,7 +2,7 @@ package ar.com.teclas.peliculas.domain;
 
 import java.io.Serializable;
 
-public class Pelicula implements Serializable {
+public class Pelicula {
     private String nombre;
 
     public Pelicula() {
